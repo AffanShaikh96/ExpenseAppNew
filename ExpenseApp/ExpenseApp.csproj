@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExpenseDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpenseDetailsForm.Designer.cs">
+      <DependentUpon>ExpenseDetailsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\Dbconn.cs" />
     <Compile Include="Entities\Expense.cs" />
     <Compile Include="Entities\MaterialExpense.cs" />
@@ -89,6 +95,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ExpenseDetailsForm.resx">
+      <DependentUpon>ExpenseDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
