@@ -64,16 +64,39 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Dbconn.cs" />
+    <Compile Include="Entities\Expense.cs" />
+    <Compile Include="Entities\MaterialExpense.cs" />
+    <Compile Include="Entities\MaterialExpenseDetails.cs" />
+    <Compile Include="Entities\PeopleExpense.cs" />
+    <Compile Include="Entities\PeopleExpenseDetails.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaterialExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialExpenseForm.Designer.cs">
+      <DependentUpon>MaterialExpenseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PeopleExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeopleExpenseForm.Designer.cs">
+      <DependentUpon>PeopleExpenseForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialExpenseForm.resx">
+      <DependentUpon>MaterialExpenseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeopleExpenseForm.resx">
+      <DependentUpon>PeopleExpenseForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -98,9 +121,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BAL\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
