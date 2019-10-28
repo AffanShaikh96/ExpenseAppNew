@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace ExpenseApp
 {
-    public partial class ExpenseDetailsForm : Form
+    public partial class BalanceAmtForm : Form
     {
-        public ExpenseDetailsForm()
+        public BalanceAmtForm()
         {
             InitializeComponent();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
-        {
-
         }
     }
 }

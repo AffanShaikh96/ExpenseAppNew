@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BalanceAmtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BalanceAmtForm.Designer.cs">
+      <DependentUpon>BalanceAmtForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExpenseDetailsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchExpenseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchExpenseForm.Designer.cs">
+      <DependentUpon>SearchExpenseForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BalanceAmtForm.resx">
+      <DependentUpon>BalanceAmtForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExpenseDetailsForm.resx">
       <DependentUpon>ExpenseDetailsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchExpenseForm.resx">
+      <DependentUpon>SearchExpenseForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

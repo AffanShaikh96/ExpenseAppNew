@@ -31,6 +31,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +45,10 @@
             this.button1 = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NAME = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EntryDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -86,15 +90,26 @@
             this.panel1.Size = new System.Drawing.Size(929, 479);
             this.panel1.TabIndex = 0;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(737, 45);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(79, 20);
+            this.checkBox1.TabIndex = 13;
+            this.checkBox1.Text = "By Code";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(255, 26);
+            this.label2.Location = new System.Drawing.Point(3, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 22);
+            this.label2.Size = new System.Drawing.Size(192, 22);
             this.label2.TabIndex = 11;
-            this.label2.Text = "People Expense Pannel";
+            this.label2.Text = "People Expense Panel";
             // 
             // label6
             // 
@@ -155,7 +170,13 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.NAME,
+            this.Code,
+            this.EntryDate});
             this.dataGridView1.Location = new System.Drawing.Point(237, 167);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(669, 300);
@@ -203,16 +224,25 @@
             this.textBox4.Size = new System.Drawing.Size(153, 20);
             this.textBox4.TabIndex = 1;
             // 
-            // checkBox1
+            // ID
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(737, 45);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 20);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Text = "By Code";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // NAME
+            // 
+            this.NAME.HeaderText = "Name";
+            this.NAME.Name = "NAME";
+            // 
+            // Code
+            // 
+            this.Code.HeaderText = "Code";
+            this.Code.Name = "Code";
+            // 
+            // EntryDate
+            // 
+            this.EntryDate.HeaderText = "EntryDate";
+            this.EntryDate.Name = "EntryDate";
             // 
             // PeopleExpenseForm
             // 
@@ -248,5 +278,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NAME;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EntryDate;
     }
 }

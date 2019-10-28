@@ -16,7 +16,7 @@ namespace ExpenseApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ExpenseDetailsForm());
+            Application.Run(new MaterialExpenseForm());
         }
     }
 }

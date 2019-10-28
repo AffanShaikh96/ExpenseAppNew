@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace ExpenseApp
 {
-    public partial class ExpenseDetailsForm : Form
+    public partial class SearchExpenseForm : Form
     {
-        public ExpenseDetailsForm()
+        public SearchExpenseForm()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void splitter1_SplitterMoved(object sender, SplitterEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
